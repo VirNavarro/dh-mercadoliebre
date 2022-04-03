@@ -1,0 +1,157 @@
+.products-section {
+  background-color: white;
+  margin: 16px 8px;
+}
+
+.product-card {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.img-product {
+  display: block;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  width: 250px;
+}
+
+.detail-products {
+  border-top: 1px solid #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  position: relative;
+}
+
+.delivery-icon {
+  background-color: #fff;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+  color: #39b54a;
+  display: block;
+  font-size: 16px;
+  height: 30px;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  width: 30px;
+}
+
+.discount {
+  color: #39b54a;
+}
+
+@media (min-width: 360px) {
+  .products-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .detail-products {
+    flex-direction: row;
+  }
+
+  .name-product {
+    width: 100%;
+  }
+
+  .price {
+    width: 30%;
+  }
+
+  .discount {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .products-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .product-card {
+    box-sizing: border-box;
+    box-shadow: none;
+    width: 49%;
+  }
+
+  .product-card:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .delivery-icon {
+    transition: transform 2s;
+  }
+
+  .delivery-icon:hover {
+    transform: rotate(360deg);
+  }
+
+  .detail-products {
+    flex-direction: row;
+  }
+
+  .name-product {
+    display: none;
+    width: 100%;
+  }
+
+  .product-card:hover .name-product {
+    display: block;
+  }
+
+  .price {
+    width: 49%;
+  }
+
+  .discount {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .title {
+    margin-left: 8px;
+    text-align: left;
+  }
+
+  .product-card {
+    width: 24%;
+  }
+
+  .product-card:hover .delivery-icon {
+    transform: rotate(360deg);
+  }
+
+  .name-product {
+    display: none;
+    width: 100%;
+  }
+
+  .price {
+    width: 50%;
+  }
+
+  .discount {
+    width: 50%;
+  }
+}

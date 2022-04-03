@@ -1,0 +1,70 @@
+.register {
+  background-color: #ebebeb;
+  margin-bottom: 12px;
+  padding: 15px 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.label {
+  display: block;
+  font-weight: 900;
+  margin: 8px 0 8px;
+}
+
+.control-input {
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0 8px;
+  padding: 8px 6px;
+  width: 100%;
+}
+
+.container-profiles {
+  margin-bottom: 8px;
+}
+
+.radio-input {
+  margin-left: 10px;
+}
+
+.checkbox-input {
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.button-register {
+  border: none;
+  border-radius: 5px;
+  background-color: #1259c3;
+  color: white;
+  display: block;
+  font-size: 20px;
+  margin-top: 8px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.button-register:hover {
+  background-color: #0022aa;
+}
+
+.button-clear {
+  background-color: rgb(190, 187, 187);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  margin-top: 8px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .register {
+    margin: auto;
+    width: 960px;
+  }
+}
